@@ -47,7 +47,7 @@ func main() {
 
 	// Send the note via Pushbullet.
 	if _, err := pb.PostPushesNote(n); err != nil {
-		fmt.Frintf(os.Stderr, "error: %s\n", err)
+		fmt.Fprintf(os.Stderr, "error: %s\n", err)
 		return
 	}
 }
